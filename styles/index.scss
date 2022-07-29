@@ -1,0 +1,16 @@
+$col-1: rgb(27, 26, 33);
+$col-2: rgba(235, 238, 234, 0.663);
+$col-3: rgb(38, 40, 45);
+$col-4: rgb(255, 255, 255);
+
+@mixin tablet{
+    @media only screen and (max-width: 600px){
+        @content;
+    }
+}
+@mixin pc-grande{
+    @media only screen and (max-width: 1200px){
+        @content;
+    }
+}
+@import "inicio"

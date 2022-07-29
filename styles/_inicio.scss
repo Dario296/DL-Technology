@@ -1,0 +1,200 @@
+.fondo{
+    margin: 0;
+    padding: 0;
+    background-color: $col-3;
+}
+.contenedor{
+    margin: 28px;
+}
+// barra-navegacion
+.nave{
+    background-color: $col-1;
+    .nav-link{
+    color: $col-4;
+        &:hover{
+            color: $col-2;
+        }
+    }
+    .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .logo{
+        font-size: 0.9rem;
+        display: block;
+    }
+}
+// inicio
+.flex{
+    display: flex;
+    @include pc-grande{
+        display: block;
+    }
+}
+.sobre-nosotros{
+    @include pc-grande{
+       margin:0 -28px;
+       margin-top: 28px;
+    }
+    max-width: 756px;
+    margin: auto;
+    .titulo{
+        color: $col-2;
+        padding: 0 28px;
+    }
+    .subtitulo{
+        color: $col-2;
+        padding: 0 28px;
+    }
+    .parrafo{
+        color: $col-2;
+        padding: 0 28px;
+    }
+}
+// servicios
+.servicios{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    margin-top: 28px;
+    &:before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.5;
+        background-image: url('../img/img2.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .titulo-s{
+        position: relative;
+        z-index: 2;
+        color: $col-4;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .subtitulo-s{
+        position: relative;
+        z-index: 2;
+        color: $col-4;
+        text-align: center;
+        font-size: 16px;
+    }
+    .parrafo-s{
+        position: relative;
+        z-index: 2;
+        color: $col-4;
+        text-align: center;
+        margin: 0 28px;
+        font-size: 16px;
+    }
+}
+.servicios2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    background-color: $col-1;
+    @include pc-grande{
+        display: block;
+    }
+}
+.servicios2-texto{
+    max-width: 1250px;
+    .titulo-s2{
+        text-align: center;
+        color: $col-2;
+        margin-top: 28px;
+    }
+    .subtitulo-s2{
+        text-align: center;
+        color: $col-2;
+    }
+    .parrafo-s2{
+        color: $col-2;
+        margin: 0 28px;
+        padding-bottom: 28px;
+    }
+}
+// trabajos
+.titulo-t{
+    text-align: center;
+    color: $col-2;
+    margin-top: 28px;
+}
+.parrafo-t{
+    text-align: center;
+    color: $col-2;
+}
+.img{
+    margin: 14px 0;
+}
+// contacto
+.contacto{
+    margin-top: 14px;
+    background-color: $col-1;
+    display: flex;
+    @include pc-grande{
+        display: block;
+    }
+    .titulo-c{
+        text-align: center;
+        padding-top: 28px;
+        color: $col-2;
+    }
+    .parrafo-c{
+        text-align: center;
+        color: $col-2;
+        margin: 28px;
+    }
+    .parrafo-c1{
+        text-align: center;
+        color: $col-2;
+        margin: 10px;
+    }
+    .formulario-c{
+        margin: 28px;
+        flex-grow: 1;
+        .datos{
+            color: $col-2;
+            margin: 10px 0;
+        }
+        .inputs{
+            display: block;
+            width: 100%;
+            border: $col-1;
+            background-color: $col-1;
+            margin-bottom: -15px;
+            resize: none;
+            color: $col-2;
+            &::-webkit-inner-spin-button,
+            ::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        .inputs:active{
+            background-color: $col-1;
+        }
+        .linea-c{
+            background-color: $col-2;
+        }
+    }
+}
+// boton subir
+.subir{
+    z-index: 5;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+    color: $col-4;
+    font-size: 1.5rem;
+    &:hover{
+        color: $col-2;
+    }
+}

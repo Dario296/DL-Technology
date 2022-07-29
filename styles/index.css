@@ -1,0 +1,214 @@
+.fondo {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(38, 40, 45);
+}
+
+.contenedor {
+  margin: 28px;
+}
+
+.nave {
+  background-color: rgb(27, 26, 33);
+}
+.nave .nav-link {
+  color: rgb(255, 255, 255);
+}
+.nave .nav-link:hover {
+  color: rgba(235, 238, 234, 0.663);
+}
+.nave .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nave .logo {
+  font-size: 0.9rem;
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+@media only screen and (max-width: 1200px) {
+  .flex {
+    display: block;
+  }
+}
+
+.sobre-nosotros {
+  max-width: 756px;
+  margin: auto;
+}
+@media only screen and (max-width: 1200px) {
+  .sobre-nosotros {
+    margin: 0 -28px;
+    margin-top: 28px;
+  }
+}
+.sobre-nosotros .titulo {
+  color: rgba(235, 238, 234, 0.663);
+  padding: 0 28px;
+}
+.sobre-nosotros .subtitulo {
+  color: rgba(235, 238, 234, 0.663);
+  padding: 0 28px;
+}
+.sobre-nosotros .parrafo {
+  color: rgba(235, 238, 234, 0.663);
+  padding: 0 28px;
+}
+
+.servicios {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  margin-top: 28px;
+}
+.servicios:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5;
+  background-image: url("../img/img2.png");
+  background-position: center;
+  background-size: cover;
+}
+.servicios .titulo-s {
+  position: relative;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 50px;
+}
+.servicios .subtitulo-s {
+  position: relative;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 16px;
+}
+.servicios .parrafo-s {
+  position: relative;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0 28px;
+  font-size: 16px;
+}
+
+.servicios2 {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  background-color: rgb(27, 26, 33);
+}
+@media only screen and (max-width: 1200px) {
+  .servicios2 {
+    display: block;
+  }
+}
+
+.servicios2-texto {
+  max-width: 1250px;
+}
+.servicios2-texto .titulo-s2 {
+  text-align: center;
+  color: rgba(235, 238, 234, 0.663);
+  margin-top: 28px;
+}
+.servicios2-texto .subtitulo-s2 {
+  text-align: center;
+  color: rgba(235, 238, 234, 0.663);
+}
+.servicios2-texto .parrafo-s2 {
+  color: rgba(235, 238, 234, 0.663);
+  margin: 0 28px;
+  padding-bottom: 28px;
+}
+
+.titulo-t {
+  text-align: center;
+  color: rgba(235, 238, 234, 0.663);
+  margin-top: 28px;
+}
+
+.parrafo-t {
+  text-align: center;
+  color: rgba(235, 238, 234, 0.663);
+}
+
+.img {
+  margin: 14px 0;
+}
+
+.contacto {
+  margin-top: 14px;
+  background-color: rgb(27, 26, 33);
+  display: flex;
+}
+@media only screen and (max-width: 1200px) {
+  .contacto {
+    display: block;
+  }
+}
+.contacto .titulo-c {
+  text-align: center;
+  padding-top: 28px;
+  color: rgba(235, 238, 234, 0.663);
+}
+.contacto .parrafo-c {
+  text-align: center;
+  color: rgba(235, 238, 234, 0.663);
+  margin: 28px;
+}
+.contacto .parrafo-c1 {
+  text-align: center;
+  color: rgba(235, 238, 234, 0.663);
+  margin: 10px;
+}
+.contacto .formulario-c {
+  margin: 28px;
+  flex-grow: 1;
+}
+.contacto .formulario-c .datos {
+  color: rgba(235, 238, 234, 0.663);
+  margin: 10px 0;
+}
+.contacto .formulario-c .inputs {
+  display: block;
+  width: 100%;
+  border: rgb(27, 26, 33);
+  background-color: rgb(27, 26, 33);
+  margin-bottom: -15px;
+  resize: none;
+  color: rgba(235, 238, 234, 0.663);
+}
+.contacto .formulario-c .inputs::-webkit-inner-spin-button,
+.contacto .formulario-c .inputs ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contacto .formulario-c .inputs:active {
+  background-color: rgb(27, 26, 33);
+}
+.contacto .formulario-c .linea-c {
+  background-color: rgba(235, 238, 234, 0.663);
+}
+
+.subir {
+  z-index: 5;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+.subir:hover {
+  color: rgba(235, 238, 234, 0.663);
+}/*# sourceMappingURL=index.css.map */
