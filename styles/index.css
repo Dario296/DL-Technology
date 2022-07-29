@@ -104,17 +104,23 @@
   margin-top: 10px;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: start;
+  justify-content: center;
   background-color: rgb(27, 26, 33);
 }
 @media only screen and (max-width: 1200px) {
   .servicios2 {
     display: block;
+    text-align: center;
   }
 }
 
 .servicios2-texto {
-  max-width: 1250px;
+  max-width: 700px;
+}
+@media only screen and (max-width: 1200px) {
+  .servicios2-texto {
+    margin: auto;
+  }
 }
 .servicios2-texto .titulo-s2 {
   text-align: center;

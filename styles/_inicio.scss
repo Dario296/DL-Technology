@@ -97,14 +97,18 @@
     margin-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: start;
+    justify-content: center;
     background-color: $col-1;
     @include pc-grande{
         display: block;
+        text-align: center;
     }
 }
 .servicios2-texto{
-    max-width: 1250px;
+    max-width: 700px;
+    @include pc-grande{
+        margin: auto;
+    }
     .titulo-s2{
         text-align: center;
         color: $col-2;
