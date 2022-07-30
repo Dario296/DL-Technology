@@ -28,12 +28,14 @@
     display: flex;
     @include pc-grande{
         display: block;
+        text-align: center;
     }
 }
 .sobre-nosotros{
     @include pc-grande{
        margin:0 -28px;
        margin-top: 28px;
+       margin: auto;
     }
     max-width: 756px;
     margin: auto;
@@ -97,7 +99,8 @@
     margin-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     background-color: $col-1;
     @include pc-grande{
         display: block;
@@ -172,7 +175,7 @@
             width: 100%;
             border: $col-1;
             background-color: $col-1;
-            margin-bottom: -15px;
+            margin-bottom: -8px;
             resize: none;
             color: $col-2;
             &::-webkit-inner-spin-button,
@@ -187,18 +190,55 @@
         .linea-c{
             background-color: $col-2;
         }
+        .enviar{
+            margin-left: calc(50% - 25.43px);
+            margin-top: 10px;
+            font-size: 1.2rem;
+            @include pc-grande{
+                margin-bottom: 20px;
+            }
+        }
     }
+}
+// pie de pagian
+.derechos1{
+    color: $col-2;
+    text-align: center;
+    margin-top: 20px;
+}
+.derechos2{
+    color: $col-2;
+    text-align: center;
+    margin-top: -15px;
+}
+.derechos3{
+    color: $col-2;
+    text-align: center;
+    margin-top: -15px;
 }
 // boton subir
 .subir{
     z-index: 5;
     position: fixed;
-    right: 20px;
+    right: 12px;
     bottom: 20px;
     text-decoration: none;
     color: $col-4;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     &:hover{
         color: $col-2;
+    }
+}
+// boton whatsapp
+.whatsapp{
+    z-index: 5;
+    position: fixed;
+    right: 10px;
+    bottom: 50%;
+    text-decoration: none;
+    color: #25d366;
+    font-size: 2.5rem;
+    &:hover{
+        color: $col-4;
     }
 }

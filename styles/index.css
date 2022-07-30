@@ -31,6 +31,7 @@
 @media only screen and (max-width: 1200px) {
   .flex {
     display: block;
+    text-align: center;
   }
 }
 
@@ -42,6 +43,7 @@
   .sobre-nosotros {
     margin: 0 -28px;
     margin-top: 28px;
+    margin: auto;
   }
 }
 .sobre-nosotros .titulo {
@@ -104,7 +106,8 @@
   margin-top: 10px;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: rgb(27, 26, 33);
 }
 @media only screen and (max-width: 1200px) {
@@ -190,7 +193,7 @@
   width: 100%;
   border: rgb(27, 26, 33);
   background-color: rgb(27, 26, 33);
-  margin-bottom: -15px;
+  margin-bottom: -8px;
   resize: none;
   color: rgba(235, 238, 234, 0.663);
 }
@@ -205,16 +208,57 @@
 .contacto .formulario-c .linea-c {
   background-color: rgba(235, 238, 234, 0.663);
 }
+.contacto .formulario-c .enviar {
+  margin-left: calc(50% - 25.43px);
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 1200px) {
+  .contacto .formulario-c .enviar {
+    margin-bottom: 20px;
+  }
+}
+
+.derechos1 {
+  color: rgba(235, 238, 234, 0.663);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.derechos2 {
+  color: rgba(235, 238, 234, 0.663);
+  text-align: center;
+  margin-top: -15px;
+}
+
+.derechos3 {
+  color: rgba(235, 238, 234, 0.663);
+  text-align: center;
+  margin-top: -15px;
+}
 
 .subir {
   z-index: 5;
   position: fixed;
-  right: 20px;
+  right: 12px;
   bottom: 20px;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .subir:hover {
   color: rgba(235, 238, 234, 0.663);
+}
+
+.whatsapp {
+  z-index: 5;
+  position: fixed;
+  right: 10px;
+  bottom: 50%;
+  text-decoration: none;
+  color: #25d366;
+  font-size: 2.5rem;
+}
+.whatsapp:hover {
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=index.css.map */
