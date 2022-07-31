@@ -8,6 +8,11 @@ $col-4: rgb(255, 255, 255);
         @content;
     }
 }
+@mixin tablet1{
+    @media only screen and (max-width: 900px){
+        @content;
+    }
+}
 @mixin pc-grande{
     @media only screen and (max-width: 1200px){
         @content;

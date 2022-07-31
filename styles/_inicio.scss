@@ -33,23 +33,24 @@
 }
 .sobre-nosotros{
     @include pc-grande{
-       margin:0 -28px;
-       margin-top: 28px;
-       margin: auto;
+        display: block;
     }
     max-width: 756px;
     margin: auto;
     .titulo{
         color: $col-2;
-        padding: 0 28px;
+        padding-left: 28px;
+        @include pc-grande{
+            margin-top: 28px;
+        }
     }
     .subtitulo{
         color: $col-2;
-        padding: 0 28px;
+        padding-left: 28px;
     }
     .parrafo{
         color: $col-2;
-        padding: 0 28px;
+        padding-left: 28px;
     }
 }
 // servicios
@@ -59,14 +60,10 @@
     height: 400px;
     margin-top: 28px;
     &:before{
-        content: ' ';
-        display: block;
+        content: '';
         position: absolute;
-        left: 0;
-        top: 0;
         width: 100%;
         height: 100%;
-        z-index: 1;
         opacity: 0.5;
         background-image: url('../img/img2.png');
         background-position: center;
@@ -74,25 +71,25 @@
     }
     .titulo-s{
         position: relative;
-        z-index: 2;
+        z-index: 1;
         color: $col-4;
         text-align: center;
         margin-top: 50px;
     }
     .subtitulo-s{
         position: relative;
-        z-index: 2;
+        z-index: 1;
         color: $col-4;
         text-align: center;
-        font-size: 16px;
+        font-size: 1rem;
     }
     .parrafo-s{
         position: relative;
-        z-index: 2;
+        z-index: 1;
         color: $col-4;
         text-align: center;
         margin: 0 28px;
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 .servicios2{
@@ -113,17 +110,16 @@
         margin: auto;
     }
     .titulo-s2{
-        text-align: center;
         color: $col-2;
-        margin-top: 28px;
+        margin: 15px 28px;
     }
     .subtitulo-s2{
-        text-align: center;
         color: $col-2;
+        margin: 10px 28px;
     }
     .parrafo-s2{
         color: $col-2;
-        margin: 0 28px;
+        margin: 10px 28px;
         padding-bottom: 28px;
     }
 }
@@ -145,7 +141,13 @@
     margin-top: 14px;
     background-color: $col-1;
     display: flex;
-    @include pc-grande{
+    .datos-c{
+        width: 50%;
+        @include tablet1{
+            width: 100%;
+        }
+    }
+    @include tablet1{
         display: block;
     }
     .titulo-c{
@@ -168,24 +170,17 @@
         flex-grow: 1;
         .datos{
             color: $col-2;
-            margin: 10px 0;
         }
         .inputs{
-            display: block;
-            width: 100%;
+            width: calc(100% - 72px);
             border: $col-1;
             background-color: $col-1;
-            margin-bottom: -8px;
-            resize: none;
             color: $col-2;
             &::-webkit-inner-spin-button,
             ::-webkit-outer-spin-button {
                 -webkit-appearance: none;
                 margin: 0;
             }
-        }
-        .inputs:active{
-            background-color: $col-1;
         }
         .linea-c{
             background-color: $col-2;
@@ -194,7 +189,7 @@
             margin-left: calc(50% - 25.43px);
             margin-top: 10px;
             font-size: 1.2rem;
-            @include pc-grande{
+            @include tablet1{
                 margin-bottom: 20px;
             }
         }
@@ -211,14 +206,9 @@
     text-align: center;
     margin-top: -15px;
 }
-.derechos3{
-    color: $col-2;
-    text-align: center;
-    margin-top: -15px;
-}
 // boton subir
 .subir{
-    z-index: 5;
+    z-index: 2;
     position: fixed;
     right: 12px;
     bottom: 20px;
@@ -231,10 +221,10 @@
 }
 // boton whatsapp
 .whatsapp{
-    z-index: 5;
+    z-index: 2;
     position: fixed;
     right: 10px;
-    bottom: 50%;
+    bottom: 70px;
     text-decoration: none;
     color: #25d366;
     font-size: 2.5rem;
