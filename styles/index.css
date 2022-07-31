@@ -46,26 +46,37 @@
 }
 .sobre-nosotros .titulo {
   color: rgba(235, 238, 234, 0.663);
-  padding-left: 28px;
+  margin-left: 28px;
 }
 @media only screen and (max-width: 1200px) {
   .sobre-nosotros .titulo {
     margin-top: 28px;
+    margin-left: 0px;
   }
 }
 .sobre-nosotros .subtitulo {
   color: rgba(235, 238, 234, 0.663);
-  padding-left: 28px;
+  margin-left: 28px;
+}
+@media only screen and (max-width: 1200px) {
+  .sobre-nosotros .subtitulo {
+    margin-left: 0px;
+  }
 }
 .sobre-nosotros .parrafo {
   color: rgba(235, 238, 234, 0.663);
-  padding-left: 28px;
+  margin-left: 28px;
+}
+@media only screen and (max-width: 1200px) {
+  .sobre-nosotros .parrafo {
+    margin-left: 0px;
+  }
 }
 
 .servicios {
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 500px;
   margin-top: 28px;
 }
 .servicios:before {

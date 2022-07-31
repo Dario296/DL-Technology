@@ -39,25 +39,32 @@
     margin: auto;
     .titulo{
         color: $col-2;
-        padding-left: 28px;
+        margin-left: 28px;
         @include pc-grande{
             margin-top: 28px;
+            margin-left: 0px;
         }
     }
     .subtitulo{
         color: $col-2;
-        padding-left: 28px;
+        margin-left: 28px;
+        @include pc-grande{
+            margin-left: 0px;
+        }
     }
     .parrafo{
         color: $col-2;
-        padding-left: 28px;
+        margin-left: 28px;
+        @include pc-grande{
+            margin-left: 0px;
+        }
     }
 }
 // servicios
 .servicios{
     position: relative;
     overflow: hidden;
-    height: 400px;
+    height: 500px;
     margin-top: 28px;
     &:before{
         content: '';
