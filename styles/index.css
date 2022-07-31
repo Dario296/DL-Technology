@@ -205,7 +205,7 @@
   color: rgba(235, 238, 234, 0.663);
 }
 .contacto .formulario-c .inputs {
-  width: calc(100% - 72px);
+  width: calc(100% - 80px);
   border: rgb(27, 26, 33);
   background-color: rgb(27, 26, 33);
   color: rgba(235, 238, 234, 0.663);
